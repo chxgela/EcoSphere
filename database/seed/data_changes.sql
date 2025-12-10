@@ -14,3 +14,7 @@ WHERE id = 1;
 UPDATE transactions
 SET amount = 7765
 WHERE id = 5;
+
+UPDATE email
+SET status = 'failed'
+WHERE id = 21;
