@@ -24,3 +24,7 @@ WHERE id = 16;
 
 DELETE FROM transactions
 WHERE id = 2;
+
+DELETE FROM email
+WHERE id = 2;
+
