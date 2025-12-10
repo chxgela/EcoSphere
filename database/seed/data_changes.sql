@@ -28,3 +28,14 @@ WHERE id = 2;
 DELETE FROM email
 WHERE id = 2;
 
+CREATE VIEW donation_summary AS
+SELECT 
+    u.firstname, 
+    u.lastname, 
+    t.amount, 
+    t.mode_of_payment, 
+    t.transaction_number, 
+    e.status AS email_status
+FROM users u
+JOIN transactions t ON t.user_id = u.id
+LEFT JOIN email e ON e.transaction_id = t.id;
