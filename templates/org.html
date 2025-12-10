@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Organizations - EcoSphere{% endblock %}
+
+{% block content %}
+<link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='org.css') }}">
+    <section class="organizations" id="Organizations">
+    <h3>OUR SUPPORTING ORGANIZATIONS</h3>
+    <h4>EcoSphere is proud to be backed by a network of dedicated organizations that share our commitment to environmental stewardship. <br>Their support helps us expand our initiatives, strengthen our impact, and bring sustainable solutions to communities in need. <br>Together, we work hand in hand to create a greener, healthier, and more resilient future for all.</h4>
+
+    <div class="org-grid">
+
+        <a href="https://www.un.org/en/" target="_blank">
+            <img src="{{ url_for('static', filename='images/un.png') }}" alt="UN">
+        </a>
+
+        <a href="https://www.unesco.org/en" target="_blank">
+            <img src="{{ url_for('static', filename='images/UNESCO.png') }}" alt="UNESCO">
+        </a>
+
+        <a href="https://scpa.com.ph/" target="_blank">
+            <img src="{{ url_for('static', filename='images/scpa.png') }}" alt="SCPA">
+        </a>
+
+        <a href="https://mama-earth.eco/" target="_blank">
+            <img src="{{ url_for('static', filename='images/mother.png') }}" alt="Mother">
+        </a>
+
+        <a href="https://haribon.org.ph" target="_blank">
+            <img src="{{ url_for('static', filename='images/Haribon.png') }}" alt="Haribon">
+        </a>
+
+        <a href="https://www.greenpeace.org/philippines/" target="_blank">
+            <img src="{{ url_for('static', filename='images/greenpeace.png') }}" alt="Greenpeace">
+        </a>
+
+        <a href="https://www.forestfoundation.ph/" target="_blank">
+            <img src="{{ url_for('static', filename='images/forest.png') }}" alt="Forest">
+        </a>
+
+        <a href="https://r7.denr.gov.ph/" target="_blank">
+            <img src="{{ url_for('static', filename='images/depart.png') }}" alt="Department">
+        </a>
+
+    </div>
+</section>
+{% endblock %}

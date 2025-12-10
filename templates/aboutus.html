@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}Team | EcoSphere{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='team.css') }}">
+</head>
+<body> 
+
+<section class="about-content">
+    <div class="image-row">
+        <img src="{{ url_for('static', filename='images/forest2.gif') }}" alt="">
+        <div class="video-box">
+            <img src="/static/images/pic2.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="text-row">
+        <h3>
+          We are a passionate group of students committed to making a real difference for our planet. 
+          EcoSphere was born from a shared desire to take action—no matter how small—in support of SDG 13 (Climate Action) and SDG 15 (Life on Land).
+        </h3>
+        <h3>
+            Instead of waiting for change, we chose to become part of it. We learn, collaborate, and create solutions that raise awareness, empower communities, and encourage sustainable habits. 
+            Our team believes that protecting the Earth is not just a responsibility—it’s a legacy we want to build together.
+        </h3>
+    </div>
+</section>
+
+<section class="team-header" id="Team">
+    <h1 class="subtitle">OUR TEAM</h1>
+    <h2 class="desc">
+        Meet our talented team of dedicated professionals who work tirelessly to deliver exceptional results and make your vision a reality.
+    </h2>
+</section>
+
+<section class="team-container featured-container">
+    <div class="team-card featured">
+        <img src="{{ url_for('static', filename='images/angela.jpg') }}" alt="Angela Dalangin">
+        <div class="info">
+            <h2>Angela Dalangin</h2>
+            <h3>Team Leader</h3>
+            <div class="icons"></div>
+        </div>
+    </div>
+</section>
+
+<h1 class="team-title">Team Members</h1>
+<section class="team-container">
+    <div class="team-card">
+        <img src="{{ url_for('static', filename='images/mira.jpg') }}" alt="Miracle Esther P. Leynes">
+        <div class="info">
+            <h3>Miracle Esther P. Leynes</h3>
+            <h3>MEMBER</h3>
+        </div>
+    </div>
+    <div class="team-card">
+        <img src="{{ url_for('static', filename='images/jim.jpg') }}" alt="Jimwel P. Nedira">
+        <div class="info">
+            <h2>Jimwel P. Nedira</h2>
+            <h3>MEMBER</h3>
+        </div>
+    </div>
+    <div class="team-card">
+        <img src="{{ url_for('static', filename='images/naya.jpg') }}" alt="Justine Nicole L. Rosales">
+        <div class="info">
+            <h3>Justine Nicole L. Rosales</h3>
+            <h3>MEMBER</h3>
+        </div>
+    </div>
+    <div class="team-card">
+        <img src="{{ url_for('static', filename='images/bene.jpg') }}" alt="Benedict L. Molinyawe">
+        <div class="info">
+            <h3>Benedict L. Molinyawe</h3>
+            <h3>MEMBER</h3>
+        </div>
+    </div>
+</section>
+
+</body>
+{% endblock %}

@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body {
+    background: #e6f3ea;  
+    color: #2e8b57;        
+    line-height: 1.6;
+}
+/* SIMPLE PAGE STYLING */
+.content {
+    margin: 50px auto;
+    width: 50%;
+    max-width: 700px;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+.content h1 {
+    color: #2a7a3b;
+    margin-bottom: 5px;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #444;
+}
+/* INTRO SECTION */
+.intro-section {
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.small-title {
+    color: #419b58;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.intro-section h1 {
+    font-size: 42px;
+    line-height: 1.3;
+}
+
+.intro-section span {
+    color: #419b58;
+}
+
+/* CARDS */
+.cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 20px;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.icon.red {
+    background: #419b58;
+}
+
+.icon.dark {
+    background: #0f1b2d;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* CONTENT IMAGES + TEXT */
+.about-content {
+    padding: 60px 120px;
+}
+
+.image-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.image-row img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.video-box {
+    position: relative;
+}
+.text-row {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.text-row p {
+    width: 50%;
+    font-size: px;
+    line-height: 1.8;
+}
+
+/* TEAM HEADER */
+.team-header {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.featured-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.team-card.featured {
+    width: 300px; 
+    transform: translateY(-20px); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* OTHER TEAM MEMBERS GRID */
+.team-container:not(.featured-container) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 20px 40px;
+    justify-items: center;
+}
+
+@media (max-width: 1100px) {
+    .team-container:not(.featured-container) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .team-container:not(.featured-container) {
+        grid-template-columns: 1fr;
+    }
+}
+/* TEAM CARDS */
+.team-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    width: 100%;
+    max-width: 250px; /* keep cards uniform */
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.team-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.team-card:hover img {
+    transform: scale(1.05);
+}
+
+.info {
+    padding: 20px;
+    background: #419b58;
+    color: #fff;
+    text-align: center;
+}
+.team-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #2a7a3b;
+    font-weight: bold;
+}
+.team-header {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto 50px auto; 
+}
+
+.team-header .subtitle {
+    font-size: 50px;
+    font-weight: bold;
+    color: #2a7a3b;
+    margin-bottom: 15px;
+}
+
+.team-header .desc {
+    font-size: 20px;
+    color: #3d6849;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 5 auto;
+}
+
+.info h3,
+.info p {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+body {
+    opacity: 0;
+    transform: translateY(5px);
+    animation: subtleFade 0.30s ease-out forwards;
+}
+
+@keyframes subtleFade {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
