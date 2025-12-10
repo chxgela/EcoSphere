@@ -22,3 +22,5 @@ WHERE id = 21;
 DELETE FROM users
 WHERE id = 16;
 
+DELETE FROM transactions
+WHERE id = 2;
