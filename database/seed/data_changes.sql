@@ -10,3 +10,7 @@ VALUES (21, 21, NOW(), 'sent');
 UPDATE users 
 SET contact = '09922346892'
 WHERE id = 1;
+
+UPDATE transactions
+SET amount = 7765
+WHERE id = 5;
