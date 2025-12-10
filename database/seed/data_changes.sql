@@ -18,3 +18,7 @@ WHERE id = 5;
 UPDATE email
 SET status = 'failed'
 WHERE id = 21;
+
+DELETE FROM users
+WHERE id = 16;
+
